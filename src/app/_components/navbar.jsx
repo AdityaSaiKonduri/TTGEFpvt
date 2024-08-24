@@ -9,7 +9,7 @@ const Navbar = () => {
   const toggleMobileMenu = () => setMobileOpen(!mobileOpen);
 
   return (
-    <nav className="bg-transparent shadow-lg sticky top-0 text-2xl font-semibold">
+    <nav className="bg-transparent shadow-lg sticky top-0 text-xl font-semibold">
       <div className="max-w-full px-4">
         <div className="flex flex-row justify-between h-20 px-20">
           <div className="flex items-center">
@@ -33,7 +33,7 @@ const Navbar = () => {
               </button>
               
               {open && (
-                <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1">
+                <div className="absolute right-0 mt-2 w-64 bg-white rounded-md shadow-lg py-1">
                   <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Why energyflow?</a>
                   <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Applications</a>
                 </div>
@@ -42,7 +42,7 @@ const Navbar = () => {
             
             <a href="#" className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md font-medium">Technology</a>
             <Link href="/ourteam" className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md font-medium">Our Team</Link>
-            <a href="#" className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md font-medium">Investors</a>
+            <Link href="/investors" className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md font-medium">Investors</Link>
           </div>
           
           <div className="md:hidden flex items-center">
@@ -82,7 +82,7 @@ const Navbar = () => {
             )}
             <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Technology</a>
             <Link href={"/ourteam"} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Our Team</Link>
-            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Investors</a>
+            <Link href={"/investors"} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Investors</Link>
           </div>
         </div>
       )}
