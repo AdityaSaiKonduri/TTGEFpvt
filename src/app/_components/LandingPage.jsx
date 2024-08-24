@@ -18,7 +18,7 @@ const LandingPage = () => {
           About Us
         </h1>
         <p className="w-full md:w-3/4 lg:w-1/2 text-center mb-12">
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
         </p>
         <div className="w-full max-w-5xl"> {/* Increased max-width */}
           <Carousel className="w-full">
