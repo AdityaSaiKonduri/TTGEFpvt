@@ -4,7 +4,7 @@ import Image from 'next/image'
 
 const page = () => {
     return (
-        <main className="overflow-x-hidden">
+        <main className="overflow-x-hidden bg_custom_gradient">
             <Navbar />
             <div className='flex flex-col gap-10 md:gap-20 px-4 md:px-8 my-32'>
                 <div className='flex flex-col md:flex-row justify-evenly items-center gap-10'>
