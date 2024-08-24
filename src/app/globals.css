@@ -25,3 +25,13 @@
     rgba(110, 182, 255, 1) 100%
   );
 }
+.bg_team_gradient {
+  background: rgb(207, 255, 129);
+  background: linear-gradient(
+    180deg,
+    rgba(207, 255, 129, 1) 0%,
+    rgba(212, 251, 192, 1) 7%,
+    rgba(242, 253, 255, 1) 23%,
+    rgba(217, 247, 255, 1) 85%
+  );
+}

@@ -1,4 +1,5 @@
 'use client'
+import Link from 'next/link';
 import React, { useState } from 'react';
 
 
@@ -42,7 +43,7 @@ const Navbar = () => {
             </div>
             
             <a href="#" className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Technology</a>
-            <a href="#" className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Our Team</a>
+            <Link href="/ourteam" className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Our Team</Link>
             <a href="#" className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md text-sm font-medium">Investors</a>
           </div>
           
@@ -82,7 +83,7 @@ const Navbar = () => {
               </div>
             )}
             <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Technology</a>
-            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Our Team</a>
+            <Link href={"/ourteam"} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Our Team</Link>
             <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Investors</a>
           </div>
         </div>
