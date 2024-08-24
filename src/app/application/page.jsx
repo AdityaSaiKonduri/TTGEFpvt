@@ -27,13 +27,13 @@ const Application = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 mt-5 md:mt-0">Grid Stabilization</h2>
             <p className="text-lg md:text-xl leading-relaxed mb-4">
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
+              industry. Lorem Ipsum has been the industrys standard dummy text
               ever since the 1500s, when an unknown printer took a galley of type
               and scrambled it to make a type specimen book.
             </p>
             <p className="text-lg md:text-xl leading-relaxed">
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
+              industry. Lorem Ipsum has been the industrys standard dummy text
               ever since the 1500s, when an unknown printer took a galley of type
               and scrambled it to make a type specimen book.
             </p>
@@ -63,13 +63,13 @@ const Application = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4">Grid Stabilization</h2>
             <p className="text-lg md:text-xl leading-relaxed mb-4">
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
+              industry. Lorem Ipsum has been the industrys standard dummy text
               ever since the 1500s, when an unknown printer took a galley of type
               and scrambled it to make a type specimen book.
             </p>
             <p className="text-lg md:text-xl leading-relaxed">
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
+              industry. Lorem Ipsum has been the industrys standard dummy text
               ever since the 1500s, when an unknown printer took a galley of type
               and scrambled it to make a type specimen book.
             </p>
@@ -81,13 +81,13 @@ const Application = () => {
             <h2 className="text-3xl md:text-4xl font-bold mb-4 mt-5 md:mt-0">Grid Stabilization</h2>
             <p className="text-lg md:text-xl leading-relaxed mb-4">
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
+              industry. Lorem Ipsum has been the industrys standard dummy text
               ever since the 1500s, when an unknown printer took a galley of type
               and scrambled it to make a type specimen book.
             </p>
             <p className="text-lg md:text-xl leading-relaxed">
               Lorem Ipsum is simply dummy text of the printing and typesetting
-              industry. Lorem Ipsum has been the industry's standard dummy text
+              industry. Lorem Ipsum has been the industrys standard dummy text
               ever since the 1500s, when an unknown printer took a galley of type
               and scrambled it to make a type specimen book.
             </p>
