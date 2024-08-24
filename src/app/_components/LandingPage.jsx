@@ -3,8 +3,8 @@ import Navbar from './navbar'
 
 const LandingPage = () => {
   return (
-    <main>
-      
+    <main className = "h-screen bg_custom_gradient">
+      <Navbar/>
     </main>
   )
 }
