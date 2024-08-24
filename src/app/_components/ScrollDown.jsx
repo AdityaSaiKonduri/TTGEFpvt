@@ -6,7 +6,7 @@ const ScrollDown = () => {
     const [isVisible, setVisibility] = useState(true);
 
     const toggleVisibility = () => {
-        if (window.scrollY < window.innerHeight) {
+        if (window.scrollY < 50) {
             setVisibility(true);
         } else {
             setVisibility(false);
@@ -23,14 +23,15 @@ const ScrollDown = () => {
     useEffect(() => {
         window.addEventListener('scroll', toggleVisibility);
 
-        return () => window.removeEventListener('scroll', toggleVisibility);
+        return () => {
+            window.removeEventListener('scroll', toggleVisibility);
+        };
     }, []);
 
     return (
         <div
-            className={`w-[50px] h-[50px] rounded-[25px] shadow- bg-black bg-opacity-35 bottom-[40px] left-1/2 fixed z-50 
-      transform -translate-x-1/2 flex items-center justify-center cursor-pointer 
-      ${isVisible ? 'block' : 'hidden'}`}
+            className={`w-[50px] h-[50px] rounded-full shadow bg-black bg-opacity-35 fixed bottom-[40px] left-1/2 transform -translate-x-1/2 flex items-center justify-center cursor-pointer 
+            ${isVisible ? 'block' : 'hidden'}`}
             onClick={scrollThrough}
         >
             <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
