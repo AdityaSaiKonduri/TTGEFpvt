@@ -5,9 +5,7 @@ import Navbar from '../_components/navbar';
 const Investors = () => {
   return (
     <main className="flex flex-col min-h-screen bg_team_gradient">
-        <div>
         <Navbar/>
-        </div>
       <div className="flex flex-col min-h-screen">
         <p className="flex items-center justify-center mt-10 text-3xl">Our Investors</p>
         <div className="flex justify-center mt-5">
