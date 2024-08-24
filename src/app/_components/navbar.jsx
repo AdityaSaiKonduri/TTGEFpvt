@@ -35,7 +35,7 @@ const Navbar = () => {
               {open && (
                 <div className="absolute right-0 mt-2 w-64 bg-white rounded-md shadow-lg py-1">
                   <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Why energyflow?</a>
-                  <a href="#" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Applications</a>
+                  <a href="/application" className="block px-4 py-2 text-gray-700 hover:bg-gray-100">Applications</a>
                 </div>
               )}
             </div>
@@ -77,7 +77,7 @@ const Navbar = () => {
             {open && (
               <div className="pl-6">
                 <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Why energyflow?</a>
-                <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Applications</a>
+                <a href="{/application}" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Applications</a>
               </div>
             )}
             <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Technology</a>
