@@ -14,15 +14,16 @@ const Footer = () => {
             </div>
             <div className="bg-[#000000] h-auto flex flex-row justify-between gap-3 p-4">
                 <div className="flex items-center justify-center p-3">
-                    <Image src="/next.svg" width={100} height={100} alt="Logo" />
+                    {/* <Image src="/next.svg" width={100} height={100} alt="Logo" /> */}
+                    <p className="text-white text-xl">LOGO</p>
                 </div>
                 <div>
-                    <h1 className="text-white">Address</h1>
+                    <p className="text-white text-xl font-bold ">Address</p>
                     <p className="text-white w-24">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
                 <div>
-                    <h1>Incubated By</h1>
-                    <p></p>
+                    <p className="text-white text-xl font-bold p-1">Incubated By</p>
+                    <p className="text-white w-24">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
             </div>
         </div>
