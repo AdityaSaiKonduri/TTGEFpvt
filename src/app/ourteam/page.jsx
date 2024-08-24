@@ -14,14 +14,12 @@ import Navbar from '../_components/navbar'
 const TeamPage = () => {
   return (
     <div className="bg_team_gradient">
-      <div className="sticky">
-        <Navbar />
-      </div>
+      <Navbar />
       <p className="text-center font-extrabold justify-center p-4 mt-4 xs:text-3xl sm:text-5xl lg:text-7xl">Meet Our Team</p>
       <div className="flex items-center justify-center min-h-screen p-4">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl w-full">
           {team_data.slice(0, 2).map((team, index) => (
-            <Card key={team.name} className="col-span-1">
+            <Card key={team.name} className="col-span-1 bg_team_card">
               <CardContent>
                 <div className="flex flex-row justify-between gap-2">
                   <div className="flex items-center rounded-md">
@@ -54,7 +52,7 @@ const TeamPage = () => {
           ))}
 
           {/* Middle centered card */}
-          <Card key={team_data[2].name} className="col-span-1 md:col-span-2 mx-auto max-w-md w-full">
+          <Card key={team_data[2].name} className="col-span-1 md:col-span-2 mx-auto max-w-md w-full bg_team_card">
             <CardContent>
               <div className="flex flex-row justify-between gap-2">
                 <div className="flex items-center rounded-md">
@@ -86,7 +84,7 @@ const TeamPage = () => {
           </Card>
 
           {team_data.slice(3, 5).map((team, index) => (
-            <Card key={team.name} className="col-span-1">
+            <Card key={team.name} className="col-span-1 bg_team_card">
               <CardContent>
                 <div className="flex flex-row justify-between gap-2">
                   <div className="flex items-center rounded-md">

@@ -35,3 +35,10 @@
     rgba(217, 247, 255, 1) 85%
   );
 }
+.bg_team_card {
+  background: linear-gradient(
+    180deg,
+    #90BDF1 0%,
+    #1B9F94 100%
+  )
+}
