@@ -42,7 +42,7 @@ const Navbar = () => {
               )}
             </div>
             
-            <a href="#" className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md font-medium">Technology</a>
+            <Link href={"/technology"} className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md font-medium">Technology</Link>
             <Link href="/ourteam" className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md font-medium">Our Team</Link>
             <Link href="/investors" className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md font-medium">Investors</Link>
           </div>
@@ -82,7 +82,7 @@ const Navbar = () => {
                 <Link href="/application" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Applications</Link>
               </div>
             )}
-            <a href="#" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Technology</a>
+            <Link href={"/technology"} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Technology</Link>
             <Link href={"/ourteam"} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Our Team</Link>
             <Link href={"/investors"} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Investors</Link>
           </div>
