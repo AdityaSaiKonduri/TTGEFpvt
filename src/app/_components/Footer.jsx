@@ -18,12 +18,12 @@ const Footer = () => {
                     <p className="text-white text-xl">LOGO</p>
                 </div>
                 <div>
-                    <p className="text-white text-xl font-bold ">Address</p>
-                    <p className="text-white w-24">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p className="text-white text-xl font-bold mb-3">Address</p>
+                    <p className="text-white w-36">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
                 <div>
-                    <p className="text-white text-xl font-bold p-1">Incubated By</p>
-                    <p className="text-white w-24">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                    <p className="text-white text-xl font-bold mb-3">Incubated By</p>
+                    <p className="text-white w-36">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
                 </div>
             </div>
         </div>
