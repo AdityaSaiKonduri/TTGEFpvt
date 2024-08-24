@@ -9,7 +9,7 @@ const page = () => {
     <main>
       <LandingImage />
       {/* <Navbar/> */}
-      <Dummy />
+      {/* <Dummy /> */}
       <LandingPage />
     </main>
   )
