@@ -1,6 +1,8 @@
 'use client'
 import React, { useState } from 'react';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
+
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
@@ -8,25 +10,35 @@ const Navbar = () => {
   const toggleDropdown = () => setOpen(!open);
   const toggleMobileMenu = () => setMobileOpen(!mobileOpen);
 
-  return (
+  const pathname = usePathname();
+  const isActive = (path) => pathname === path;
 
-    <nav className="bg-transparent shadow-lg sticky top-0 z-50 backdrop-blur-md text-xl font-semibold">
+  return (
+    <nav className="bg-[#04A763] shadow-lg top-0 z-50 text-l font-semibold">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
-
           <div className="flex items-center">
-            <div className="flex-shrink-0 flex items-center">
-              <span className="font-bold">Logo</span>
-            </div>
+            <Link
+              href='/'
+            >
+              <div className="flex-shrink-0 flex items-center">
+                <span className="font-bold">Logo</span>
+              </div>
+            </Link>
           </div>
           
           <div className="hidden md:flex items-center space-x-4">
-            <Link href="/" className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md font-medium">Home</Link>
+            <Link 
+              href="/" 
+              className={`${isActive('/') ? 'text-white' : 'text-black'} hover:text-white px-3 py-2 rounded-md font-medium`}
+            >
+              Home
+            </Link>
             
             <div className="relative">
               <button
                 onClick={toggleDropdown}
-                className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md font-medium flex items-center"
+                className={`${isActive('/solution') || isActive('/application') ? 'text-white' : 'text-black'} hover:text-white px-3 py-2 rounded-md font-medium flex items-center`}
               >
                 Our Solution
                 <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 ml-1">
@@ -35,16 +47,43 @@ const Navbar = () => {
               </button>
               
               {open && (
-                <div className="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg py-1">
-                  <Link href="/solution" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Why energyflow?</Link>
-                  <Link href="/application" className="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-100">Applications</Link>
+                <div className="absolute right-0 mt-2 w-48 bg-[#04A763] rounded-md shadow-lg py-1">
+                  <Link 
+                    href="/solution" 
+                    className={`block px-4 py-2 text-sm ${isActive('/solution') ? 'text-white' : 'text-black'} hover:text-white`}
+                  >
+                    Why energyflow?
+                  </Link>
+                  <Link 
+                    href="/application" 
+                    className={`block px-4 py-2 text-sm ${isActive('/application') ? 'text-white' : 'text-black'} hover:text-white`}
+                  >
+                    Applications
+                  </Link>
                 </div>
               )}
             </div>
             
-            <Link href={"/technology"} className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md font-medium">Technology</Link>
-            <Link href="/ourteam" className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md font-medium">Our Team</Link>
-            <Link href="/investors" className="text-gray-700 hover:text-gray-900 px-3 py-2 rounded-md font-medium">Investors</Link>
+            <Link 
+              href="/technology" 
+              className={`${isActive('/technology') ? 'text-white' : 'text-black'} hover:text-white px-3 py-2 rounded-md font-medium`}
+            >
+              Technology
+            </Link>
+            
+            <Link 
+              href="/ourteam" 
+              className={`${isActive('/ourteam') ? 'text-white' : 'text-black'} hover:text-white px-3 py-2 rounded-md font-medium`}
+            >
+              Our Team
+            </Link>
+            
+            <Link 
+              href="/investors" 
+              className={`${isActive('/investors') ? 'text-white' : 'text-black'} hover:text-white px-3 py-2 rounded-md font-medium`}
+            >
+              Investors
+            </Link>
           </div>
           
           <div className="md:hidden flex items-center">
@@ -65,26 +104,63 @@ const Navbar = () => {
       {mobileOpen && (
         <div className="md:hidden sticky bg-none">
           <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-none">
-            <Link href="/" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Home</Link>
-            <button
-              className="w-full text-left px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50"
+            <Link 
+              href="/" 
+              className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/') ? 'text-white bg-[#04A763]' : 'text-gray-700'} hover:text-gray-900 bg-[#04A763]`}
             >
-              Our Solution
-              <button onClick={toggleDropdown}>
-                <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 ml-1 pt-1">
-                  <path d="M7 10l5 5 5-5H7z" fill="currentColor" />
-                </svg>
+              Home
+            </Link>
+            
+            <div>
+              <button
+                className={`w-full text-left px-3 py-2 rounded-md text-base font-medium ${isActive('/solution') || isActive('/application') ? 'text-white' : 'text-gray-700'} hover:text-gray-900 bg-[#04A763]`}
+              >
+                Our Solution
+                <button onClick={toggleDropdown}>
+                  <svg width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-5 h-5 ml-1 pt-1">
+                    <path d="M7 10l5 5 5-5H7z" fill="currentColor" />
+                  </svg>
+                </button>
               </button>
-            </button>
-            {open && (
-              <div className="pl-6">
-                <Link href="/solution" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Why energyflow?</Link>
-                <Link href="/application" className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Applications</Link>
-              </div>
-            )}
-            <Link href={"/technology"} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Technology</Link>
-            <Link href={"/ourteam"} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Our Team</Link>
-            <Link href={"/investors"} className="block px-3 py-2 rounded-md text-base font-medium text-gray-700 hover:text-gray-900 hover:bg-gray-50">Investors</Link>
+              
+              {open && (
+                <div className="pl-6">
+                  <Link 
+                    href="/solution" 
+                    className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/solution') ? 'text-white bg-gray-50' : 'text-gray-700'} hover:text-gray-900 bg-[#04A763]`}
+                  >
+                    Why energyflow?
+                  </Link>
+                  <Link 
+                    href="/application" 
+                    className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/application') ? 'text-white bg-gray-50' : 'text-gray-700'} hover:text-gray-900 bg-[#04A763]`}
+                  >
+                    Applications
+                  </Link>
+                </div>
+              )}
+            </div>
+            
+            <Link 
+              href="/technology" 
+              className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/technology') ? 'text-white bg-[#04A763]' : 'text-gray-700'} hover:text-gray-900 bg-[#04A763]`}
+            >
+              Technology
+            </Link>
+            
+            <Link 
+              href="/ourteam" 
+              className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/ourteam') ? 'text-white bg-[#04A763]' : 'text-gray-700'} hover:text-gray-900 bg-[#04A763]`}
+            >
+              Our Team
+            </Link>
+            
+            <Link 
+              href="/investors" 
+              className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/investors') ? 'text-white bg-[#04A763]' : 'text-gray-700'} hover:text-gray-900 bg-[#04A763]`}
+            >
+              Investors
+            </Link>
           </div>
         </div>
       )}
