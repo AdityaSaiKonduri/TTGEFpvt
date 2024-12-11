@@ -39,3 +39,10 @@
       #1B9F94 100%
     )
 }
+
+.custom-bg{
+  background: url("/custom-bg.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

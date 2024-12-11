@@ -2,6 +2,7 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
+import Image from 'next/image';
 
 const Navbar = () => {
   const [open, setOpen] = useState(false);
@@ -14,7 +15,7 @@ const Navbar = () => {
   const isActive = (path) => pathname === path;
 
   return (
-    <nav className="bg-[#04A763] shadow-lg top-0 z-50 text-l font-semibold">
+    <nav className="bg-[#04A763] shadow-lg top-0 z-50 text-l font-semibold p-2">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
@@ -22,7 +23,8 @@ const Navbar = () => {
               href='/'
             >
               <div className="flex-shrink-0 flex items-center">
-                <span className="font-bold">Logo</span>
+                {/* <span className="font-bold">Logo</span> */}
+                <img src="/logo.png" alt="Logo"className='h-[80px] w-[80px]'/>
               </div>
             </Link>
           </div>
