@@ -1,121 +1,132 @@
 import React from 'react'
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card"
 import team_data from './data'
 import Image from 'next/image'
 import Navbar from '../_components/navbar'
 
 const TeamPage = () => {
   return (
-    <div className="bg_team_gradient">
+    <div className="">
       <Navbar />
-      <p className="text-center font-extrabold justify-center p-4 mt-4 xs:text-3xl sm:text-5xl lg:text-7xl">Meet Our Team</p>
-      <div className="flex items-center justify-center min-h-screen p-4">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl w-full">
-          {team_data.slice(0, 2).map((team, index) => (
-            <Card key={team.name} className="col-span-1 bg_team_card">
-              <CardContent>
-                <div className="flex flex-row justify-between gap-2">
-                  <div className="flex items-center rounded-md">
-                    <Image
-                      src="/next.svg"
-                      width={50}
-                      height={50}
-                      alt="Picture of the author"
-                    />
-                  </div>
-                  <div>
-                    <CardHeader>
-                      <CardTitle>{team.name}</CardTitle>
-                      <CardDescription>{team.designation}</CardDescription>
-                    </CardHeader>
-                    <CardFooter className="flex flex-col">
-                      <div className="flex flex-row gap-4 p-2">
-                        <Image src="/dial_small.png" alt="Call" width={20} height={5} />
-                        <a href={`tel:${team.phone_number}`} className="block">{team.phone_number}</a>
-                      </div>
-                      <div className="flex flex-row gap-4 p-2">
-                        <Image src="/mail_small.png" alt="Call" width={30} height={5} />
-                        <a href={`mailto:${team.email}`} className="block">{team.email}</a>
-                      </div >
-                    </CardFooter>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
-
-          {/* Middle centered card */}
-          <Card key={team_data[2].name} className="col-span-1 md:col-span-2 mx-auto max-w-md w-full bg_team_card">
-            <CardContent>
-              <div className="flex flex-row justify-between gap-2">
-                <div className="flex items-center rounded-md">
-                  <Image
-                    src="/next.svg"
-                    width={50}
-                    height={50}
-                    alt="Picture of the author"
-                  />
-                </div>
-                <div>
-                  <CardHeader>
-                    <CardTitle>{team_data[2].name}</CardTitle>
-                    <CardDescription>{team_data[2].designation}</CardDescription>
-                  </CardHeader>
-                  <CardFooter className="flex flex-col">
-                    <div className="flex flex-row gap-4 p-2">
-                      <Image src="/dial_small.png" alt="Call" width={20} height={5} />
-                      <a href={`tel:${team_data[2].phone_number}`} className="block">{team_data[2].phone_number}</a>
-                    </div>
-                    <div className="flex flex-row gap-4 p-2">
-                      <Image src="/mail_small.png" alt="Call" width={30} height={5} />
-                      <a href={`mailto:${team_data[2].email}`} className="block">{team_data[2].email}</a>
-                    </div>
-                  </CardFooter>
-                </div>
-              </div>
-            </CardContent>
-          </Card>
-
-          {team_data.slice(3, 5).map((team, index) => (
-            <Card key={team.name} className="col-span-1 bg_team_card">
-              <CardContent>
-                <div className="flex flex-row justify-between gap-2">
-                  <div className="flex items-center rounded-md">
-                    <Image
-                      src="/next.svg"
-                      width={50}
-                      height={50}
-                      alt="Picture of the author"
-                    />
-                  </div>
-                  <div>
-                    <CardHeader>
-                      <CardTitle>{team.name}</CardTitle>
-                      <CardDescription>{team.designation}</CardDescription>
-                    </CardHeader>
-                    <CardFooter className="flex flex-col">
-                      <div className="flex flex-row gap-4 p-2">
-                        <Image src="/dial_small.png" alt="Call" width={20} height={5} />
-                        <a href={`tel:${team.phone_number}`} className="block">{team.phone_number}</a>
-                      </div>
-                      <div className="flex flex-row gap-4 p-2">
-                        <Image src="/mail_small.png" alt="Call" width={30} height={5} />
-                        <a href={`mailto:${team.email}`} className="block">{team.email}</a>
-                      </div>
-                    </CardFooter>
-                  </div>
-                </div>
-              </CardContent>
-            </Card>
-          ))}
+      <div className='mt-5 flex flex-col justify-center text-center items-center pb-10 w-full'>
+        <div className='text-5xl py-5'>
+          Meet Our Team
         </div>
+
+        <div className='flex flex-col md:flex-row w-full gap-10 md:gap-20 px-5 md:px-10 pb-10'>
+          <div className='flex flex-col items-center w-full md:w-1/2'>
+            <div className='h-64 w-64 lg:h-96 lg:w-96 bg-gray-600 rounded-3xl'>
+              {/* Optionally, insert an image or content here */}
+            </div>
+            <div className='text-xl md:text-2xl mt-5'>
+              <p>
+                {team_data[0].name}
+              </p>
+              <p>
+                {team_data[0].designation}
+              </p>
+              <div className='flex justify-center items-center gap-2'>
+                <Image src="/dial_small.png" alt="Call" width={20} height={20} />
+                <span>{team_data[0].phone_number}</span>
+              </div>
+              <div className='flex justify-center items-center gap-2'>
+                <Image src="/mail_small.png" alt="Mail" width={30} height={20} />
+                <span>{team_data[0].email}</span>
+              </div>
+            </div>
+          </div>
+          <div className='flex flex-col items-center w-full md:w-1/2'>
+            <div className='h-64 w-64 lg:h-96 lg:w-96 bg-gray-600 rounded-3xl'>
+              {/* Optionally, insert an image or content here */}
+            </div>
+            <div className='text-xl md:text-2xl mt-5'>
+              <p>
+                {team_data[1].name}
+              </p>
+              <p>
+                {team_data[1].designation}
+              </p>
+              <div className='flex justify-center items-center gap-2'>
+                <Image src="/dial_small.png" alt="Call" width={20} height={20} />
+                <span>{team_data[1].phone_number}</span>
+              </div>
+              <div className='flex justify-center items-center gap-2'>
+                <Image src="/mail_small.png" alt="Mail" width={30} height={20} />
+                <span>{team_data[1].email}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div className='flex flex-col md:flex-row w-full gap-10 md:gap-20 px-5 md:px-10 pb-10'>
+          <div className='flex flex-col items-center w-full'>
+            <div className='h-64 w-64 lg:h-96 lg:w-96 bg-gray-600 rounded-3xl'>
+              {/* Optionally, insert an image or content here */}
+            </div>
+            <div className='text-xl md:text-2xl mt-5'>
+              <p>
+                {team_data[2].name}
+              </p>
+              <p>
+                {team_data[2].designation}
+              </p>
+              <div className='flex justify-center items-center gap-2'>
+                <Image src="/dial_small.png" alt="Call" width={20} height={20} />
+                <span>{team_data[2].phone_number}</span>
+              </div>
+              <div className='flex justify-center items-center gap-2'>
+                <Image src="/mail_small.png" alt="Mail" width={30} height={20} />
+                <span>{team_data[2].email}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className='flex flex-col md:flex-row w-full gap-10 md:gap-20 px-5 md:px-10'>
+          <div className='flex flex-col items-center w-full md:w-1/2'>
+            <div className='h-64 w-64 lg:h-96 lg:w-96 bg-gray-600 rounded-3xl'>
+              {/* Optionally, insert an image or content here */}
+            </div>
+            <div className='text-xl md:text-2xl mt-5'>
+              <p>
+                {team_data[3].name}
+              </p>
+              <p>
+                {team_data[3].designation}
+              </p>
+              <div className='flex justify-center items-center gap-2'>
+                <Image src="/dial_small.png" alt="Call" width={20} height={20} />
+                <span>{team_data[3].phone_number}</span>
+              </div>
+              <div className='flex justify-center items-center gap-2'>
+                <Image src="/mail_small.png" alt="Mail" width={30} height={20} />
+                <span>{team_data[3].email}</span>
+              </div>
+            </div>
+          </div>
+          <div className='flex flex-col items-center w-full md:w-1/2'>
+            <div className='h-64 w-64 lg:h-96 lg:w-96 bg-gray-600 rounded-3xl'>
+              {/* Optionally, insert an image or content here */}
+            </div>
+            <div className='text-xl md:text-2xl mt-5'>
+              <p>
+                {team_data[4].name}
+              </p>
+              <p>
+                {team_data[4].designation}
+              </p>
+              <div className='flex justify-center items-center gap-2'>
+                <Image src="/dial_small.png" alt="Call" width={20} height={20} />
+                <span>{team_data[4].phone_number}</span>
+              </div>
+              <div className='flex justify-center items-center gap-2'>
+                <Image src="/mail_small.png" alt="Mail" width={30} height={20} />
+                <span>{team_data[4].email}</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   )
