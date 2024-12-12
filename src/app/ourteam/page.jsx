@@ -28,9 +28,11 @@ const TeamPage = () => {
                 <Image src="/dial_small.png" alt="Call" width={20} height={20} />
                 <span>{team_data[0].phone_number}</span>
               </div>
-              <div className='flex justify-center items-center gap-2'>
-                <Image src="/mail_small.png" alt="Mail" width={30} height={20} />
-                <span>{team_data[0].email}</span>
+              <div className="flex justify-center items-center gap-2">
+                <Link href={`mailto:${team_data[0].email}`} target="_blank" className="flex items-center gap-2">
+                  <Image src="/mail_small.png" alt="Mail" width={30} height={20} />
+                  <span>{team_data[0].email}</span>
+                </Link>
               </div>
             </div>
           </div>
@@ -49,9 +51,11 @@ const TeamPage = () => {
                 <Image src="/dial_small.png" alt="Call" width={20} height={20} />
                 <span>{team_data[1].phone_number}</span>
               </div>
-              <div className='flex justify-center items-center gap-2'>
-                <Image src="/mail_small.png" alt="Mail" width={30} height={20} />
-                <span>{team_data[1].email}</span>
+              <div className="flex justify-center items-center gap-2">
+                <Link href={`mailto:${team_data[1].email}`} target="_blank" className="flex items-center gap-2">
+                  <Image src="/mail_small.png" alt="Mail" width={30} height={20} />
+                  <span>{team_data[1].email}</span>
+                </Link>
               </div>
             </div>
           </div>
@@ -74,9 +78,11 @@ const TeamPage = () => {
                 <Image src="/dial_small.png" alt="Call" width={20} height={20} />
                 <span>{team_data[2].phone_number}</span>
               </div>
-              <div className='flex justify-center items-center gap-2'>
-                <Image src="/mail_small.png" alt="Mail" width={30} height={20} />
-                <span>{team_data[2].email}</span>
+              <div className="flex justify-center items-center gap-2">
+                <Link href={`mailto:${team_data[2].email}`} target="_blank" className="flex items-center gap-2">
+                  <Image src="/mail_small.png" alt="Mail" width={30} height={20} />
+                  <span>{team_data[2].email}</span>
+                </Link>
               </div>
             </div>
           </div>
@@ -98,9 +104,11 @@ const TeamPage = () => {
                 <Image src="/dial_small.png" alt="Call" width={20} height={20} />
                 <span>{team_data[3].phone_number}</span>
               </div>
-              <div className='flex justify-center items-center gap-2'>
-                <Image src="/mail_small.png" alt="Mail" width={30} height={20} />
-                <span>{team_data[3].email}</span>
+              <div className="flex justify-center items-center gap-2">
+                <Link href={`mailto:${team_data[3].email}`} target="_blank" className="flex items-center gap-2">
+                  <Image src="/mail_small.png" alt="Mail" width={30} height={20} />
+                  <span>{team_data[3].email}</span>
+                </Link>
               </div>
             </div>
           </div>
@@ -119,9 +127,11 @@ const TeamPage = () => {
                 <Image src="/dial_small.png" alt="Call" width={20} height={20} />
                 <span>{team_data[4].phone_number}</span>
               </div>
-              <div className='flex justify-center items-center gap-2'>
-                <Image src="/mail_small.png" alt="Mail" width={30} height={20} />
-                <span>{team_data[4].email}</span>
+              <div className="flex justify-center items-center gap-2">
+                <Link href={`mailto:${team_data[4].email}`} target="_blank" className="flex items-center gap-2">
+                  <Image src="/mail_small.png" alt="Mail" width={30} height={20} />
+                  <span>{team_data[4].email}</span>
+                </Link>
               </div>
             </div>
           </div>
