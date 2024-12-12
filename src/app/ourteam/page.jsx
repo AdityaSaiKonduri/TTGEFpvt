@@ -14,8 +14,8 @@ const TeamPage = () => {
 
         <div className='flex flex-col md:flex-row w-full gap-10 md:gap-20 px-5 md:px-10 pb-10'>
           <div className='flex flex-col items-center w-full md:w-1/2'>
-            <div className='h-64 w-64 lg:h-96 lg:w-96 bg-gray-600 rounded-3xl'>
-              {/* Optionally, insert an image or content here */}
+            <div className='h-64 w-64 lg:h-96 lg:w-96  rounded-3xl'>
+            <img src="/people/shan_Dec24.jpeg" alt="Application" srcset="" className="w-full h-full"/>
             </div>
             <div className='text-xl md:text-2xl mt-5'>
               <p>
@@ -35,8 +35,8 @@ const TeamPage = () => {
             </div>
           </div>
           <div className='flex flex-col items-center w-full md:w-1/2'>
-            <div className='h-64 w-64 lg:h-96 lg:w-96 bg-gray-600 rounded-3xl'>
-              {/* Optionally, insert an image or content here */}
+            <div className='h-64 w-64 lg:h-96 lg:w-96 rounded-3xl'>
+            <img src="/people/umesh_Dec24.jpeg" alt="Application" srcset="" className="w-full h-full"/>
             </div>
             <div className='text-xl md:text-2xl mt-5'>
               <p>
@@ -60,8 +60,8 @@ const TeamPage = () => {
 
         <div className='flex flex-col md:flex-row w-full gap-10 md:gap-20 px-5 md:px-10 pb-10'>
           <div className='flex flex-col items-center w-full'>
-            <div className='h-64 w-64 lg:h-96 lg:w-96 bg-gray-600 rounded-3xl'>
-              {/* Optionally, insert an image or content here */}
+            <div className='h-64 w-64 lg:h-96 lg:w-96 rounded-3xl'>
+            <img src="/application.png" alt="Application" srcset="" className="w-full h-full"/>
             </div>
             <div className='text-xl md:text-2xl mt-5'>
               <p>
@@ -84,8 +84,8 @@ const TeamPage = () => {
 
         <div className='flex flex-col md:flex-row w-full gap-10 md:gap-20 px-5 md:px-10'>
           <div className='flex flex-col items-center w-full md:w-1/2'>
-            <div className='h-64 w-64 lg:h-96 lg:w-96 bg-gray-600 rounded-3xl'>
-              {/* Optionally, insert an image or content here */}
+            <div className='h-64 w-64 lg:h-96 lg:w-96  rounded-3xl'>
+            <img src="/application.png" alt="Application" srcset="" className="w-full h-full"/>
             </div>
             <div className='text-xl md:text-2xl mt-5'>
               <p>
@@ -105,8 +105,8 @@ const TeamPage = () => {
             </div>
           </div>
           <div className='flex flex-col items-center w-full md:w-1/2'>
-            <div className='h-64 w-64 lg:h-96 lg:w-96 bg-gray-600 rounded-3xl'>
-              {/* Optionally, insert an image or content here */}
+            <div className='h-64 w-64 lg:h-96 lg:w-96  rounded-3xl'>
+            <img src="/application.png" alt="Application" srcset="" className="w-full h-full"/>
             </div>
             <div className='text-xl md:text-2xl mt-5'>
               <p>

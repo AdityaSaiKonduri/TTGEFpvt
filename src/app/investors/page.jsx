@@ -43,7 +43,7 @@ const Investors = () => {
         </div>
 
         <p className="text-center mt-10 text-2xl md:text-5xl">Our Investors</p>
-        
+
         {/* Investor Section 1 */}
         <div className="flex flex-col md:flex-row justify-between items-center p-5">
           <div className="md:w-1/2 mb-6 md:mb-0 order-2 md:order-1">
@@ -99,7 +99,7 @@ const Investors = () => {
         </div>
 
         <p className="text-center mt-10 text-2xl md:text-5xl">Our Goals</p>
-        
+
         <div className="flex flex-col md:flex-row items-center justify-center gap-5 md:gap-10">
           <Image
             src="/our_goals1.png"
@@ -132,27 +132,27 @@ const Investors = () => {
         </div>
 
         <p className="text-center mt-10 text-2xl md:text-5xl pb-10">Long term plans</p>
-        
-        <div className="flex justify-center items-center h-96 w-full pb-10">
-          <div className='bg-gray-600 h-96 w-9/12'>
 
+        <div className="flex justify-center items-center h-96 w-full pb-10">
+          <div className=' h-96 w-9/12'>
+            <img src="/application.png" alt="Application" srcset="" className="w-full h-full" />
           </div>
         </div>
 
         <p className="text-center mt-10 text-2xl md:text-5xl pb-7">Tharam Thiram</p>
 
         <div className='flex flex-row justify-center items-center text-center h-64 w-full pb-10'>
-        <div className='bg-green-600 h-32 w-8/12 rounded-full flex items-center justify-between px-10'>
-          <p className="md:px-16 text-white md:text-lg text-base px-4  font-semibold">Let&apos;s start investing</p>
-          <Image
-            src="/lets_invest.png"
-            alt="why_invest_on_us"
-            width={100}
-            height={100}
-            className="z-10 p-5"
-          />
+          <div className='bg-green-600 h-32 w-8/12 rounded-full flex items-center justify-between px-10'>
+            <p className="md:px-16 text-white md:text-lg text-base px-4  font-semibold">Let&apos;s start investing</p>
+            <Image
+              src="/lets_invest.png"
+              alt="why_invest_on_us"
+              width={100}
+              height={100}
+              className="z-10 p-5"
+            />
+          </div>
         </div>
-      </div>
       </div>
     </main>
   );
