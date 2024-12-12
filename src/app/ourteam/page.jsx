@@ -87,7 +87,6 @@ const TeamPage = () => {
             </div>
           </div>
         </div>
-
         <div className='flex flex-col md:flex-row w-full gap-10 md:gap-20 px-5 md:px-10'>
           <div className='flex flex-col items-center w-full md:w-1/2'>
             <div className='h-64 w-64 lg:h-96 lg:w-96  rounded-3xl'>
@@ -136,7 +135,6 @@ const TeamPage = () => {
             </div>
           </div>
         </div>
-
       </div>
     </div>
   )
