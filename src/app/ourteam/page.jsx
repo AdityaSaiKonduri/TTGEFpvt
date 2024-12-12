@@ -2,6 +2,7 @@ import React from 'react'
 import team_data from './data'
 import Image from 'next/image'
 import Navbar from '../_components/navbar'
+import Link from 'next/link'
 
 const TeamPage = () => {
   return (
