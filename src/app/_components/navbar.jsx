@@ -91,7 +91,7 @@ const Navbar = () => {
           <div className="md:hidden flex items-center">
             <button
               onClick={toggleMobileMenu}
-              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
+              className="inline-flex items-center justify-center p-2 rounded-md text-gray-400 hover:text-white hover:bg-[#04A763] focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500"
             >
               <svg width="30" height="30" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <rect x="4" y="6" width="16" height="2" fill="currentColor" />
@@ -129,13 +129,13 @@ const Navbar = () => {
                 <div className="pl-6">
                   <Link 
                     href="/solution" 
-                    className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/solution') ? 'text-white bg-gray-50' : 'text-gray-700'} hover:text-gray-900 bg-[#04A763]`}
+                    className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/solution') ? 'text-white bg-[#04A763]' : 'text-gray-700'} hover:text-gray-900 bg-[#04A763]`}
                   >
                     Why energyflow?
                   </Link>
                   <Link 
                     href="/application" 
-                    className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/application') ? 'text-white bg-gray-50' : 'text-gray-700'} hover:text-gray-900 bg-[#04A763]`}
+                    className={`block px-3 py-2 rounded-md text-base font-medium ${isActive('/application') ? 'text-white bg-[#04A763]' : 'text-gray-700'} hover:text-gray-900 bg-[#04A763]`}
                   >
                     Applications
                   </Link>

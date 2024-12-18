@@ -40,7 +40,7 @@ const Footer = () => {
                         <span>9908442753</span>
                     </p>
                     <Link href={"mailto:umesh@energyflow.co.in"} target='_blank'>
-                        <p className="flex flex-row gap-4 text-xl items-center justify-center text-center">
+                        <p className="flex flex-row gap-4 text-md lg:text-xl items-center justify-center text-center">
                             <svg className="w-[35px] h-[35px]" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                                 <path stroke="currentColor" strokeLinecap="round" strokeWidth="2" d="m3.5 5.5 7.893 6.036a1 1 0 0 0 1.214 0L20.5 5.5M4 19h16a1 1 0 0 0 1-1V6a1 1 0 0 0-1-1H4a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1Z" />
                             </svg>
