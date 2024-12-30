@@ -34,6 +34,8 @@ const page = () => {
                         </div>
                     </div>
                 </div>
+
+                
                 <div className='w-full rounded-lg flex justify-center items-center'>
                     <video src="/videos/video_ttgef.mp4" controls className='rounded-lg w-3/4 h-auto'></video>
                 </div>
