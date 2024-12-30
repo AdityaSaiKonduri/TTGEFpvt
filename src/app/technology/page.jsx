@@ -37,7 +37,7 @@ const page = () => {
 
 
                 <div className='w-full rounded-lg flex justify-center items-center'>
-                    <video src="/videos/video_ttgef.mp4" controls className='rounded-lg w-3/4 h-auto'></video>
+                    <video src="/videos/tech_video.mp4" controls className='rounded-lg w-3/4 h-auto'></video>
                 </div>
                 {/* <div className='w-full flex flex-col items-center justify-center gap-20'>
                     <div className='bg-[#04A763] flex flex-col justify-center items-center p-12 rounded-xl w-1/2'>
