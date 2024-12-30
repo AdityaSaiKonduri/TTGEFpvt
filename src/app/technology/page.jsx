@@ -19,7 +19,7 @@ const page = () => {
                             </div>
                             <div className='linespace-md flex flex-col justify-center items-center gap-10'>
                                 <span className='text-xl'>
-                                A flow battery is an electrochemical energy storage device. Unlike conventional batteries, the electrolyte, which stores the energy, is kept outside the cell section in liquid form within a tank. The electrolyte is pumped into the cell section during charging or discharging processes. This design allows for the adjustment of the electrolyte volume to modify the battery system's backup duration. 
+                                A flow battery is an electrochemical energy storage device. Unlike conventional batteries, the electrolyte, which stores the energy, is kept outside the cell section in liquid form within a tank. The electrolyte is pumped into the cell section during charging or discharging processes. This design allows for the adjustment of the electrolyte volume to modify the battery system&apos;s backup duration. 
                                 <br />Flow batteries, with their scalable backup capacity, offer a promising solution. Unlike vanadium-based flow batteries, which rely on expensive and rare materials, our sulfur-iron flow battery utilizes abundant and affordable electrolytes, making it an ideal choice for long-duration storage exceeding 20 hours.                                </span>
                             </div>
                         </div>
@@ -35,7 +35,7 @@ const page = () => {
                     </div>
                 </div>
 
-                
+
                 <div className='w-full rounded-lg flex justify-center items-center'>
                     <video src="/videos/video_ttgef.mp4" controls className='rounded-lg w-3/4 h-auto'></video>
                 </div>
