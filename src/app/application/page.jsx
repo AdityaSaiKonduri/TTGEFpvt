@@ -7,7 +7,7 @@ const Application = () => {
     <main className="flex flex-col min-h-screen">
       <Navbar />
       <div className="w-full mb-6 md:mb-0">
-        <img src="/application1.png" alt="Application" srcset="" className="w-full h-[70vh]" />
+        <img src="/application.png" alt="Application" srcset="" className="w-full h-[70vh]" />
       </div>
       <div className="container mx-auto px-4 py-8 flex flex-col gap-4 md:gap-10">
 
@@ -29,13 +29,13 @@ const Application = () => {
             </p>
           </div>
           <div className="md:w-1/2 order-1 md:order-2">
-            <img src="/application.png" alt="Image gray" className="w-full" />
+            <img src="/application_1.png" alt="Image gray" className="w-full" />
           </div>
         </div>
 
         <div className="flex flex-col md:flex-row justify-between items-center p-5 gap-8">
           <div className="md:w-1/2 mb-6 md:mb-0 order-1">
-            <img src="/application.png" alt="Image gray" className="w-full" />
+            <img src="/application2.png" alt="Image gray" className="w-full" />
           </div>
           <div className="md:w-1/2 order-2">
             <p className="text-xl md:text-2xl font-semibold leading-relaxed mb-4">

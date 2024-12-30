@@ -4,14 +4,14 @@ import React, { useEffect, useState } from 'react';
 import Link from 'next/link';
 
 const Footer = () => {
-    const [visitorCount, setVisitorCount] = useState(0);
+    // const [visitorCount, setVisitorCount] = useState(0);
 
-    useEffect(() => {
-        const storedCount = localStorage.getItem('visitorCount');
-        const count = storedCount ? parseInt(storedCount, 10) + 1 : 1;
-        setVisitorCount(count);
-        localStorage.setItem('visitorCount', count.toString());
-    }, []);
+    // useEffect(() => {
+    //     const storedCount = localStorage.getItem('visitorCount');
+    //     const count = storedCount ? parseInt(storedCount, 10) + 1 : 1;
+    //     setVisitorCount(count);
+    //     localStorage.setItem('visitorCount', count.toString());
+    // }, []);
 
     return (
         <main className="flex flex-col mt-20">
@@ -55,7 +55,7 @@ const Footer = () => {
                             <span>LinkedIn</span>
                         </p>
                     </Link>
-                    <span className="text-xl">Number of visitors: {visitorCount}</span>
+                    {/* <span className="text-xl">Number of visitors: {visitorCount}</span> */}
                 </div>
             </div>
             <div className="bg-[#04A763] p-8 flex md:flex-row flex-col gap-8 md:gap-0 w-full text-center items-center">
