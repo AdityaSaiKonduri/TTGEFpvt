@@ -19,8 +19,8 @@ const page = () => {
                             </div>
                             <div className='linespace-md flex flex-col justify-center items-center gap-10'>
                                 <span className='text-xl'>
-                                A flow battery is an electrochemical energy storage device. Unlike conventional batteries, the electrolyte, which stores the energy, is kept outside the cell section in liquid form within a tank. The electrolyte is pumped into the cell section during charging or discharging processes. This design allows for the adjustment of the electrolyte volume to modify the battery system&apos;s backup duration. 
-                                <br />Flow batteries, with their scalable backup capacity, offer a promising solution. Unlike vanadium-based flow batteries, which rely on expensive and rare materials, our sulfur-iron flow battery utilizes abundant and affordable electrolytes, making it an ideal choice for long-duration storage exceeding 20 hours.                                </span>
+                                    A flow battery is an electrochemical energy storage device. Unlike conventional batteries, the electrolyte, which stores the energy, is kept outside the cell section in liquid form within a tank. The electrolyte is pumped into the cell section during charging or discharging processes. This design allows for the adjustment of the electrolyte volume to modify the battery system&apos;s backup duration.
+                                    <br />Flow batteries, with their scalable backup capacity, offer a promising solution. Unlike vanadium-based flow batteries, which rely on expensive and rare materials, our sulfur-iron flow battery utilizes abundant and affordable electrolytes, making it an ideal choice for long-duration storage exceeding 20 hours.                                </span>
                             </div>
                         </div>
                     </div>
@@ -37,8 +37,15 @@ const page = () => {
 
 
                 <div className='w-full rounded-lg flex justify-center items-center'>
-                    <video src="/videos/tech_video.mp4" controls className='rounded-lg w-3/4 h-auto'></video>
+                    <iframe
+                        src="https://www.youtube.com/embed/_8mIq-UVgMw"
+                        title="YouTube video player"
+                        className="rounded-lg w-3/4 h-auto"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowFullScreen
+                    ></iframe>
                 </div>
+
                 {/* <div className='w-full flex flex-col items-center justify-center gap-20'>
                     <div className='bg-[#04A763] flex flex-col justify-center items-center p-12 rounded-xl w-1/2'>
                         <p className='text-4xl'>Eco Friendly & Sustainable</p>
