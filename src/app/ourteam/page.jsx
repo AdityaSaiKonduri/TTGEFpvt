@@ -15,29 +15,6 @@ const TeamPage = () => {
 
         <div className='flex flex-col md:flex-row w-full gap-10 md:gap-20 px-5 md:px-10 pb-10'>
           <div className='flex flex-col items-center w-full md:w-1/2'>
-            <div className='h-64 w-64 lg:h-96 lg:w-96  rounded-3xl'>
-            <img src="/people/shan_Dec24.jpeg" alt="Application" srcset="" className="w-full h-full"/>
-            </div>
-            <div className='text-xl md:text-2xl mt-5'>
-              <p>
-                {team_data[0].name}
-              </p>
-              <p>
-                {team_data[0].designation}
-              </p>
-              <div className='flex justify-center items-center gap-2'>
-                <Image src="/dial_small.png" alt="Call" width={20} height={20} />
-                <span>{team_data[0].phone_number}</span>
-              </div>
-              <div className="flex justify-center items-center gap-2">
-                <Link href={`mailto:${team_data[0].email}`} target="_blank" className="flex items-center gap-2">
-                  <Image src="/mail_small.png" alt="Mail" width={30} height={20} />
-                  <span>{team_data[0].email}</span>
-                </Link>
-              </div>
-            </div>
-          </div>
-          <div className='flex flex-col items-center w-full md:w-1/2'>
             <div className='h-64 w-64 lg:h-96 lg:w-96 rounded-3xl'>
             <img src="/people/umesh_Dec24.jpeg" alt="Application" srcset="" className="w-full h-full"/>
             </div>
@@ -56,6 +33,29 @@ const TeamPage = () => {
                 <Link href={`mailto:${team_data[1].email}`} target="_blank" className="flex items-center gap-2">
                   <Image src="/mail_small.png" alt="Mail" width={30} height={20} />
                   <span>{team_data[1].email}</span>
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className='flex flex-col items-center w-full md:w-1/2'>
+            <div className='h-64 w-64 lg:h-96 lg:w-96  rounded-3xl'>
+            <img src="/people/shan_Dec24.jpeg" alt="Application" srcset="" className="w-full h-full"/>
+            </div>
+            <div className='text-xl md:text-2xl mt-5'>
+              <p>
+                {team_data[0].name}
+              </p>
+              <p>
+                {team_data[0].designation}
+              </p>
+              <div className='flex justify-center items-center gap-2'>
+                <Image src="/dial_small.png" alt="Call" width={20} height={20} />
+                <span>{team_data[0].phone_number}</span>
+              </div>
+              <div className="flex justify-center items-center gap-2">
+                <Link href={`mailto:${team_data[0].email}`} target="_blank" className="flex items-center gap-2">
+                  <Image src="/mail_small.png" alt="Mail" width={30} height={20} />
+                  <span>{team_data[0].email}</span>
                 </Link>
               </div>
             </div>

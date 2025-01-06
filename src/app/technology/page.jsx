@@ -27,24 +27,29 @@ const page = () => {
                     <div className='flex flex-col justify-center items-center mt-10 gap-4'>
                         <h2 className='text-3xl md:text-4xl lg:text-[48px] text-center mb-6'>Harnessing Nature, Storing the Future</h2>
                         <div className='grid grid-cols-2 md:grid-cols-4 gap-6 md:gap-10 lg:gap-28 justify-center'>
-                            <Image src="/image_t3.png" width={200} height={200} alt='Technology image 3' />
+                            <Image src="/image_t2.png" width={200} height={200} alt='Technology image 2' />
                             <Image src="/image_t4.png" width={200} height={200} alt='Technology image 4' />
                             <Image src="/image_t1.png" width={200} height={200} alt='Technology image 1' />
-                            <Image src="/image_t2.png" width={200} height={200} alt='Technology image 2' />
+                            <Image src="/image_t3.png" width={200} height={200} alt='Technology image 3' />
                         </div>
                     </div>
                 </div>
 
 
                 <div className='w-full rounded-lg flex justify-center items-center'>
-                    <iframe
-                        src="https://www.youtube.com/embed/_8mIq-UVgMw"
-                        title="YouTube video player"
-                        className="rounded-lg w-3/4 h-auto"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                    ></iframe>
+                    <div className="relative w-3/4" style={{ paddingBottom: '45%' }}>
+                        <iframe
+                            src="https://www.youtube.com/embed/yKhfsODlTaI"
+                            title="YouTube video player"
+                            className="absolute top-0 left-0 w-full h-full rounded-lg"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowFullScreen
+                        ></iframe>
+                    </div>
                 </div>
+
+
+
 
                 {/* <div className='w-full flex flex-col items-center justify-center gap-20'>
                     <div className='bg-[#04A763] flex flex-col justify-center items-center p-12 rounded-xl w-1/2'>

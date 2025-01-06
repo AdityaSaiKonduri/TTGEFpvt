@@ -42,34 +42,49 @@ const Investors = () => {
           />
         </div> */}
 
-        <p className="text-center mt-10 text-2xl md:text-5xl">Grants</p>
+        <p className="text-center mt-10 text-3xl md:text-5xl">Grants</p>
 
         {/* Investor Section 1 */}
         <div className='flex flex-col md:flex-row items-center justify-center gap-6 md:gap-16'>
           <img
             src="/our_investors1.png"
             alt="Investor 1"
-            className="md:w-1/4 w-1/2 object-contain"
+            className="md:w-1/4 w-1/3 object-contain"
           />
           <img
             src="/our_investors2.png"
             alt="Investor 2"
-            className="md:w-1/4 w-1/2 object-contain"
+            className="md:w-1/4 w-1/3 object-contain"
           />
           <img
             src="/our_investors3.png"
             alt="Investor 3"
-            className="md:w-1/4 w-1/2 object-contain"
+            className="md:w-1/4 w-1/3 object-contain"
           />
         </div>
-        
-        <p className="text-center mt-10 text-2xl md:text-5xl">Awards and Recognitions</p>
-        <div className='flex flex-col md:flex-row items-center justify-center gap-6 md:gap-16'>
-          <p></p>
-          <p></p>
+
+        <div className='w-full flex flex-col items-center justify-center gap-2 my-6'>
+          <div className='w-full h-[1px] bg-gray-400'></div>
+          <div className='w-full h-[1px] bg-gray-400'></div>
         </div>
-        
-        <p className="text-center mt-10 text-2xl md:text-5xl">Investors</p>
+
+        <p className="text-center mt-10 text-3xl md:text-5xl">Awards and Recognitions</p>
+        <div className='w-4/5 flex flex-col md:flex-row items-center md:justify-between justify-center gap-16 md:gap-16'>
+          <div className='flex flex-col items-center justify-start gap-10 text-center md:w-1/2 w-4/5'>
+            <p className='text-2xl text-red-500'>One of the most impactful startups Prayas 2020 batch</p>
+            <img src="/awards1.png" alt="Award 1" className="" />
+          </div>
+          <div className='flex flex-col items-center justify-start gap-10 text-center md:w-1/2 w-4/5'>
+            <p className='text-2xl text-red-500'>One of the top 5 startups in Climate Pitch 2024 by Climate Collective</p>
+            <img src="/awards2.png" alt="Award 1" className="" />
+          </div>
+        </div>
+
+        <div className='w-full flex flex-col items-center justify-center gap-2 my-6'>
+          <div className='w-full h-[1px] bg-gray-400'></div>
+          <div className='w-full h-[1px] bg-gray-400'></div>
+        </div>
+        <p className="text-center mt-10 text-3xl md:text-5xl">Investors</p>
         <div className='flex flex-col md:flex-row items-center justify-center gap-6 md:gap-16'>
           <img
             src="/our_investors4.png"
@@ -81,7 +96,7 @@ const Investors = () => {
             alt="Investor 5"
             className="object-cover"
           />
-          
+
         </div>
 
         {/* <p className="text-center mt-10 text-2xl md:text-5xl">Our Goals</p>

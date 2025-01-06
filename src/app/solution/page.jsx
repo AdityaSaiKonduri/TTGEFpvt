@@ -36,7 +36,7 @@ const Solution = () => {
                             </p>
                         </div>
                         <div className="bg-[#04A763] p-8 gap-10 rounded-xl flex flex-row-reverse items-center w-full max-w-4xl">
-                            <Image src="/key_aspects/image1.png" alt="Aspect 3" width={100} height={100} className="mx-auto" />
+                            <Image src="/key_aspects/image3.png" alt="Aspect 3" width={100} height={100} className="mx-auto" />
                             <p className="mt-4 text-center text-lg font-medium">
                                 <span className='font-semibold text-xl block mb-4'>Sustainable and Affordable</span>
                                 Our product leverages sulfur and iron-based electrolytes, which are naturally abundant and contribute to a more sustainable energy storage solution. By avoiding the use of rare earth metals like lithium and vanadium, we reduce the environmental impact associated with extensive mining activities. Furthermore, our affordable electrolyte makes our flow battery one of the most economical options for applications requiring backup durations exceeding 20 hours.
