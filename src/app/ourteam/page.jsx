@@ -66,7 +66,7 @@ const TeamPage = () => {
         <div className='flex flex-col md:flex-row w-full gap-10 md:gap-20 px-5 md:px-10 pb-10'>
           <div className='flex flex-col items-center w-full'>
             <div className='h-64 w-64 lg:h-96 lg:w-96 rounded-3xl'>
-            <img src="/application.png" alt="Application" srcset="" className="w-full h-full"/>
+            <img src="/people/Narendren.jpg" alt="Application" srcset="" className="w-full h-full"/>
             </div>
             <div className='text-xl md:text-2xl mt-5'>
               <p>
@@ -91,7 +91,7 @@ const TeamPage = () => {
         <div className='flex flex-col md:flex-row w-full gap-10 md:gap-20 px-5 md:px-10'>
           <div className='flex flex-col items-center w-full md:w-1/2'>
             <div className='h-64 w-64 lg:h-96 lg:w-96  rounded-3xl'>
-            <img src="/application.png" alt="Application" srcset="" className="w-full h-full"/>
+            <img src="/people/Kaleesh.jpg" alt="Application" srcset="" className="w-full h-full"/>
             </div>
             <div className='text-xl md:text-2xl mt-5'>
               <p>
@@ -114,7 +114,7 @@ const TeamPage = () => {
           </div>
           <div className='flex flex-col items-center w-full md:w-1/2'>
             <div className='h-64 w-64 lg:h-96 lg:w-96  rounded-3xl'>
-            <img src="/application.png" alt="Application" srcset="" className="w-full h-full"/>
+            <img src="/people/Vaisakh.jpg" alt="Application" srcset="" className="w-full h-full"/>
             </div>
             <div className='text-xl md:text-2xl mt-5'>
               <p>
