@@ -5,10 +5,11 @@ import Image from "next/image";
 const Application = () => {
   return (
     <main className="flex flex-col min-h-screen">
-      <Navbar />
-      <div className="w-full mb-6 md:mb-0">
+      <div className='invisible'><Navbar /></div>
+      {/* <Navbar /> */}
+      {/* <div className="w-full mb-6 md:mb-0">
         <img src="/application.png" alt="Application" srcset="" className="w-full h-[70vh]" />
-      </div>
+      </div> */}
       <div className="container mx-auto px-4 py-8 flex flex-col gap-4 md:gap-10">
 
         <div className="flex flex-col justify-center items-center text-center mb-8 gap-5">

@@ -2,10 +2,11 @@ import React from 'react'
 import Navbar from '../_components/navbar'
 import Image from 'next/image'
 
-const page = () => {
+const Technology = () => {
     return (
         <main className="overflow-x-hidden">
-            <Navbar />
+            {/* <Navbar /> */}
+            <div className='invisible'><Navbar /></div>
             <div className='flex flex-col justify-center items-start gap-10'>
                 <div className='flex flex-col gap-10 md:gap-20 px-4 md:px-8 my-32'>
                     <div className='flex flex-col md:flex-row-reverse justify-center items-center gap-10'>
@@ -80,4 +81,4 @@ const page = () => {
     )
 }
 
-export default page;
+export default Technology;

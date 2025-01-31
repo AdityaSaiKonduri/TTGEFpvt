@@ -12,7 +12,8 @@ import { Card, CardContent } from "@/components/ui/card"
 const LandingPage = () => {
   return (
     <main className="min-h-screen">
-      <Navbar />
+      {/* <Navbar /> */}
+      <div className='invisible'><Navbar /></div>
       <div className="flex flex-col justify-center items-center mt-16 px-4">
         <h1 className="text-4xl md:text-5xl font-bold mb-6">
           About Us
