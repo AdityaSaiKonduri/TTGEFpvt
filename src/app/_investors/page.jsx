@@ -5,7 +5,8 @@ import Navbar from '../_components/navbar';
 const Investors = () => {
   return (
     <main className="flex flex-col min-h-screen">
-      <Navbar />
+      {/* <Navbar /> */}
+      <div className='invisible'><Navbar /></div>
       <div className="flex flex-col justify-center items-center min-h-screen gap-10">
         {/* <div className="flex flex-row items-center justify-center gap-10">
           <p className="text-center mt-10 text-2xl md:text-5xl">Why invest on us?</p>

@@ -5,7 +5,8 @@ import Image from 'next/image';
 const Solution = () => {
     return (
         <div className="flex flex-col min-h-screen">
-            <Navbar />
+            {/* <Navbar /> */}
+            <div className='invisible'><Navbar /></div>
             <h1 className="text-4xl lg:text-6xl font-semibold text-center p-4">OUR SOLUTION</h1>
             <div className="flex flex-col items-center">
                 <div className="flex flex-col md:flex-row items-center p-2 mt-3 w-full max-w-7xl gap-10">
