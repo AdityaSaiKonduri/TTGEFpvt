@@ -7,16 +7,16 @@ import Link from 'next/link'
 const TeamPage = () => {
   return (
     <div className="">
-      <div className='invisible'><Navbar /></div>
+      {/* <div className='invisible'><Navbar /></div> */}
       <div className='mt-5 flex flex-col justify-center text-center items-center pb-10 w-full'>
-        <div className='text-5xl py-5'>
+        <h1 className="text-4xl lg:text-6xl text-center font-semibold mt-5 mb-10">
           Meet Our Team
-        </div>
+        </h1>
 
-        <div className='flex flex-col md:flex-row w-full gap-10 md:gap-20 px-5 md:px-10 pb-10'>
+        <div className='flex flex-col md:flex-row w-full gap-10 md:gap-20 px-5 md:px-10 pb-10 mt-5'>
           <div className='flex flex-col items-center w-full md:w-1/2'>
             <div className='h-64 w-64 lg:h-96 lg:w-96 rounded-3xl'>
-            <img src="/people/umesh_Dec24.jpeg" alt="Application" srcset="" className="w-full h-full rounded-3xl"/>
+              <img src="/people/umesh_Dec24.jpeg" alt="Application" srcset="" className="w-full h-full rounded-3xl" />
             </div>
             <div className='text-xl md:text-2xl mt-5'>
               <p>
@@ -39,7 +39,7 @@ const TeamPage = () => {
           </div>
           <div className='flex flex-col items-center w-full md:w-1/2'>
             <div className='h-64 w-64 lg:h-96 lg:w-96  rounded-3xl'>
-            <img src="/people/shan_Dec24.jpeg" alt="Application" srcset="" className="w-full h-full rounded-3xl"/>
+              <img src="/people/shan_Dec24.jpeg" alt="Application" srcset="" className="w-full h-full rounded-3xl" />
             </div>
             <div className='text-xl md:text-2xl mt-5'>
               <p>
@@ -66,7 +66,7 @@ const TeamPage = () => {
         <div className='flex flex-col md:flex-row w-full gap-10 md:gap-20 px-5 md:px-10 pb-10'>
           <div className='flex flex-col items-center w-full'>
             <div className='h-64 w-64 lg:h-96 lg:w-96 rounded-3xl'>
-            <img src="/people/Narendren.jpg" alt="Application" srcset="" className="w-full h-full rounded-3xl"/>
+              <img src="/people/Narendren.jpg" alt="Application" srcset="" className="w-full h-full rounded-3xl" />
             </div>
             <div className='text-xl md:text-2xl mt-5'>
               <p>
@@ -91,7 +91,7 @@ const TeamPage = () => {
         <div className='flex flex-col md:flex-row w-full gap-10 md:gap-20 px-5 md:px-10'>
           <div className='flex flex-col items-center w-full md:w-1/2'>
             <div className='h-64 w-64 lg:h-96 lg:w-96  rounded-3xl'>
-            <img src="/people/Kaleesh.jpg" alt="Application" srcset="" className="w-full h-full rounded-3xl"/>
+              <img src="/people/Kaleesh.jpg" alt="Application" srcset="" className="w-full h-full rounded-3xl" />
             </div>
             <div className='text-xl md:text-2xl mt-5'>
               <p>
@@ -114,7 +114,7 @@ const TeamPage = () => {
           </div>
           <div className='flex flex-col items-center w-full md:w-1/2'>
             <div className='h-64 w-64 lg:h-96 lg:w-96  rounded-3xl'>
-            <img src="/people/Vaisakh.jpg" alt="Application" srcset="" className="w-full h-full rounded-3xl"/>
+              <img src="/people/Vaisakh.jpg" alt="Application" srcset="" className="w-full h-full rounded-3xl" />
             </div>
             <div className='text-xl md:text-2xl mt-5'>
               <p>

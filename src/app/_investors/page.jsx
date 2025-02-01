@@ -6,7 +6,8 @@ const Investors = () => {
   return (
     <main className="flex flex-col min-h-screen">
       {/* <Navbar /> */}
-      <div className='invisible'><Navbar /></div>
+      {/* <div className='invisible'><Navbar /></div> */}
+      <h1 className="text-4xl lg:text-6xl font-semibold text-center p-4">Investors</h1>
       <div className="flex flex-col justify-center items-center min-h-screen gap-10">
         {/* <div className="flex flex-row items-center justify-center gap-10">
           <p className="text-center mt-10 text-2xl md:text-5xl">Why invest on us?</p>
@@ -72,11 +73,11 @@ const Investors = () => {
         <p className="text-center mt-10 text-3xl md:text-5xl">Awards and Recognitions</p>
         <div className='w-4/5 flex flex-col md:flex-row items-center md:justify-between justify-center gap-16 md:gap-16'>
           <div className='flex flex-col items-center justify-start gap-10 text-center md:w-1/2 w-4/5'>
-            <p className='text-2xl text-red-500'>One of the most impactful startups Prayas 2020 batch</p>
+            <p className='text-2xl text-green-500 font-semibold'>One of the most impactful startups Prayas 2020 batch</p>
             <img src="/awards1.png" alt="Award 1" className="" />
           </div>
           <div className='flex flex-col items-center justify-start gap-10 text-center md:w-1/2 w-4/5'>
-            <p className='text-2xl text-red-500'>One of the top 5 startups in Climate Pitch 2024 by Climate Collective</p>
+            <p className='text-2xl text-green-500 font-semibold'>One of the top 5 startups in Climate Pitch 2024 by Climate Collective</p>
             <img src="/awards2.png" alt="Award 1" className="" />
           </div>
         </div>

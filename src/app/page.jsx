@@ -16,8 +16,10 @@ const App = () => {
   const technologyRef = useRef(null);
   const teamRef = useRef(null);
   const investorsRef = useRef(null);
+  const landingImageRef = useRef(null);
 
   const sections = {
+    landingImage: landingImageRef,
     landingPage: landingPageRef,
     solution: solutionRef,
     application: applicationRef,
@@ -27,27 +29,29 @@ const App = () => {
   };
 
   return (
-    <main>
-      <section ref={landingPageRef}>
+    <main className="relative">
+      <section ref={landingImageRef}>
         <LandingImage />
       </section>
-      <Navbar sections={sections} />
-      <section ref={landingPageRef}>
+      <div className="sticky top-0 z-50">
+        <Navbar sections={sections} />
+      </div>
+      <section ref={landingPageRef} className="scroll-mt-24 md:scroll-mt-20">
         <LandingPage />
       </section>
-      <section ref={solutionRef}>
+      <section ref={solutionRef} className="scroll-mt-24 md:scroll-mt-20">
         <Solution />
       </section>
-      <section ref={applicationRef}>
+      <section ref={applicationRef} className="scroll-mt-24 md:scroll-mt-20">
         <Application />
       </section>
-      <section ref={technologyRef}>
+      <section ref={technologyRef} className="scroll-mt-24 md:scroll-mt-20">
         <Technology />
       </section>
-      <section ref={teamRef}>
+      <section ref={teamRef} className="scroll-mt-24 md:scroll-mt-20">
         <TeamPage />
       </section>
-      <section ref={investorsRef}>
+      <section ref={investorsRef} className="scroll-mt-24 md:scroll-mt-20">
         <Investors />
       </section>
     </main>

@@ -5,6 +5,8 @@ const Navbar = ({ sections }) => {
   const [open, setOpen] = useState(false);
   const [mobileOpen, setMobileOpen] = useState(false);
   const dropdownRef = useRef(null);
+  const navbarRef = useRef(null);
+  const mobileMenuRef = useRef(null);
 
   useEffect(() => {
     const handleClickOutside = (event) => {
@@ -21,20 +23,36 @@ const Navbar = ({ sections }) => {
 
   const handleScroll = (sectionRef, sectionName) => {
     if (sectionRef && sectionRef.current) {
-      sectionRef.current.scrollIntoView({ behavior: 'smooth' });
-      window.history.pushState(null, '', `/${sectionName}`);
+      const isMobile = window.innerWidth < 768; // md breakpoint
+
+      // Get the total height of navbar including mobile menu if open
+      const navbarHeight = navbarRef.current.getBoundingClientRect().height;
+      const mobileMenuHeight = isMobile && mobileOpen ? mobileMenuRef.current.getBoundingClientRect().height : 0;
+      const totalOffset = navbarHeight + (isMobile ? 0 : 0); // Add mobile menu height only when calculating scroll position
+
+      const elementPosition = sectionRef.current.getBoundingClientRect().top;
+      const currentScroll = window.pageYOffset || document.documentElement.scrollTop;
+      const offsetPosition = currentScroll + elementPosition - totalOffset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+
       setOpen(false);
       setMobileOpen(false);
     }
   };
 
   return (
-    <nav className="bg-[#04A763] shadow-lg sticky top-0 z-50 text-l font-semibold p-2 backdrop-blur-sm">
+    <nav ref={navbarRef} className="bg-[#04A763] shadow-lg sticky top-0 z-50 text-l font-semibold p-2 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16">
           <div className="flex items-center">
             <div className="flex-shrink-0 flex items-center">
-              <img src="/logo.png" alt="Logo" className="h-[80px] w-[80px]" />
+              <button onClick={() => handleScroll(sections.landingImage, '')}>
+                <img src="/logo.png" alt="Logo" className="h-[80px] w-[80px] object-contain" />
+              </button>
             </div>
           </div>
 
@@ -59,9 +77,8 @@ const Navbar = ({ sections }) => {
                   height="24"
                   fill="none"
                   xmlns="http://www.w3.org/2000/svg"
-                  className={`w-5 h-5 ml-1 transform transition-transform duration-200 ${
-                    open ? 'rotate-180' : ''
-                  }`}
+                  className={`w-5 h-5 ml-1 transform transition-transform duration-200 ${open ? 'rotate-180' : ''
+                    }`}
                 >
                   <path d="M7 10l5 5 5-5H7z" fill="currentColor" />
                 </svg>
@@ -134,9 +151,9 @@ const Navbar = ({ sections }) => {
 
       {/* Mobile Dropdown Menu */}
       <div
-        className={`md:hidden transition-all duration-300 ease-in-out ${
-          mobileOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
-        }`}
+        ref={mobileMenuRef}
+        className={`md:hidden transition-all duration-300 ease-in-out ${mobileOpen ? 'max-h-96 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
+          }`}
       >
         <button
           onClick={() => handleScroll(sections.landingPage, '')}
@@ -154,18 +171,16 @@ const Navbar = ({ sections }) => {
             height="30"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            className={`w-5 h-5 ml-1 inline-block transform transition-transform duration-200 ${
-              open ? 'rotate-180' : ''
-            }`}
+            className={`w-5 h-5 ml-1 inline-block transform transition-transform duration-200 ${open ? 'rotate-180' : ''
+              }`}
           >
             <path d="M7 10l5 5 5-5H7z" fill="currentColor" />
           </svg>
         </button>
-        
+
         <div
-          className={`transition-all duration-300 ease-in-out ${
-            open ? 'max-h-32 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
-          }`}
+          className={`transition-all duration-300 ease-in-out ${open ? 'max-h-32 opacity-100' : 'max-h-0 opacity-0 overflow-hidden'
+            }`}
         >
           <button
             onClick={() => handleScroll(sections.solution, 'solution')}

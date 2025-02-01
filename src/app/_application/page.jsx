@@ -5,7 +5,7 @@ import Image from "next/image";
 const Application = () => {
   return (
     <main className="flex flex-col min-h-screen">
-      <div className='invisible'><Navbar /></div>
+      {/* <div className='invisible'><Navbar /></div> */}
       {/* <Navbar /> */}
       {/* <div className="w-full mb-6 md:mb-0">
         <img src="/application.png" alt="Application" srcset="" className="w-full h-[70vh]" />
@@ -13,7 +13,7 @@ const Application = () => {
       <div className="container mx-auto px-4 py-8 flex flex-col gap-4 md:gap-10">
 
         <div className="flex flex-col justify-center items-center text-center mb-8 gap-5">
-          <h1 className="text-4xl md:text-5xl lg:text-6xl text-center font-bold mt-5">
+          <h1 className="text-4xl lg:text-6xl text-center font-semibold mt-5">
             Application
           </h1>
           <p className="text-xl md:text-2xl leading-relaxed mb-4 my-10 w-10/12">

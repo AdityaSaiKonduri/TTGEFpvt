@@ -6,8 +6,8 @@ const Solution = () => {
     return (
         <div className="flex flex-col min-h-screen">
             {/* <Navbar /> */}
-            <div className='invisible'><Navbar /></div>
-            <h1 className="text-4xl lg:text-6xl font-semibold text-center p-4">OUR SOLUTION</h1>
+            {/* <div className='invisible'><Navbar /></div> */}
+            <h1 className="text-4xl lg:text-6xl font-semibold text-center p-4">Our Solution</h1>
             <div className="flex flex-col items-center">
                 <div className="flex flex-col md:flex-row items-center p-2 mt-3 w-full max-w-7xl gap-10">
                     <div className="flex justify-center p-3">
@@ -19,7 +19,7 @@ const Solution = () => {
                     </p>
                 </div>
 
-                <div className="w-full max-w-7xl p-4 flex flex-col items-center">
+                <div className="w-full max-w-7xl p-4 flex flex-col items-center mt-10">
                     <p className="text-center text-4xl lg:text-5xl mb-4">Key Aspects</p>
                     <div className="space-y-4 w-full flex flex-col items-center">
                         <div className="bg-[#04A763] p-8 gap-10 rounded-xl flex flex-row-reverse items-center w-full max-w-4xl">

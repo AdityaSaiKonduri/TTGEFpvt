@@ -6,14 +6,15 @@ const Technology = () => {
     return (
         <main className="overflow-x-hidden">
             {/* <Navbar /> */}
-            <div className='invisible'><Navbar /></div>
+            {/* <div className='invisible'><Navbar /></div> */}
+            <h1 className="text-4xl lg:text-6xl font-semibold text-center p-4">Technology</h1>
             <div className='flex flex-col justify-center items-start gap-10'>
                 <div className='flex flex-col gap-10 md:gap-20 px-4 md:px-8 my-32'>
                     <div className='flex flex-col md:flex-row-reverse justify-center items-center gap-10'>
-                        <div className='flex items-center justify-center w-full md:w-1/2 h-full'>
+                        {/* <div className='flex items-center justify-center w-full md:w-1/2 h-full'>
                             <img src="/tech_img1.png" alt="IMg" />
-                        </div>
-                        <div className="flex flex-col w-full md:w-1/2 text-center md:text-left gap-10">
+                        </div> */}
+                        <div className="flex flex-col w-full md:w-3/4 lg:w-3/5 text-center md:text-left gap-10">
                             <div className='text-4xl flex flex-col'>
                                 <span>Energy Flow</span>
                                 <span>Sulfur - Iron Flow Battery</span>
@@ -38,7 +39,7 @@ const Technology = () => {
 
 
                 <div className='w-full rounded-lg flex justify-center items-center'>
-                    <div className="relative w-3/4" style={{ paddingBottom: '45%' }}>
+                    <div className="relative w-3/5" style={{ paddingBottom: '35%' }}>
                         <iframe
                             src="https://www.youtube.com/embed/yKhfsODlTaI"
                             title="YouTube video player"
