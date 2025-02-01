@@ -13,6 +13,9 @@ const Footer = () => {
     //     localStorage.setItem('visitorCount', count.toString());
     // }, []);
 
+    const date = new Date();
+    const year = date.getFullYear();
+
     return (
         <main className="flex flex-col mt-20">
             <div className="bg-white flex flex-col md:flex-row justify-between items-start py-4 px-10 gap-10">
@@ -37,7 +40,7 @@ const Footer = () => {
                         <svg width="35" height="35" viewBox="0 0 35 35" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M11.272 1.68311C10.7456 0.41168 9.35799 -0.265049 8.03187 0.0972402L2.01651 1.73779C0.827112 2.0659 0 3.14593 0 4.37635C0 21.2877 13.7123 35 30.6236 35C31.8541 35 32.9341 34.1729 33.2622 32.9835L34.9028 26.9681C35.265 25.642 34.5883 24.2544 33.3169 23.728L26.7547 20.9938C25.6405 20.529 24.3485 20.8502 23.5898 21.7867L20.8282 25.1567C16.0159 22.8804 12.1196 18.9841 9.84332 14.1718L13.2133 11.4171C14.1498 10.6515 14.471 9.36636 14.0062 8.25216L11.272 1.68994V1.68311Z" fill="black" />
                         </svg>
-                        <span>9629205600</span>
+                        <span>+91 9629205600</span>
                     </p>
                     <Link href={"mailto:umesh@energyflow.co.in"} target='_blank'>
                         <p className="flex flex-row gap-4 text-md lg:text-xl items-center justify-center text-center">
@@ -59,10 +62,11 @@ const Footer = () => {
                 </div>
             </div>
             <div className="bg-[#04A763] p-8 flex md:flex-row flex-col gap-8 md:gap-0 w-full text-center items-center">
-                <img src="/logo.png" alt="Logo" className='w-[150px] h-[150px] md:w-[100px] md:h-[100px] flex-none' />
+                {/* <img src="/logo.png" alt="Logo" className='w-36' /> */}
 
-                <div className="flex-1 text-xl">
-                    <p>&copy; Copyright 2024</p>
+                <div className="flex-col flex-1 text-xl">
+                    <p>&copy; Copyright {year}</p>
+                    <p>Tharam Thiran Green Energy Flow Private Limited</p>
                 </div>
             </div>
 
