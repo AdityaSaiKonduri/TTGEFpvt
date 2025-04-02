@@ -1,6 +1,7 @@
 import React from 'react';
 import Navbar from '../_components/navbar';
 import Image from 'next/image';
+import ScrollFadeIn from '../_components/scroll-animation';
 
 const Solution = () => {
     return (
@@ -10,13 +11,17 @@ const Solution = () => {
             <h1 className="text-4xl lg:text-6xl font-semibold text-center p-4">Our Solution</h1>
             <div className="flex flex-col items-center">
                 <div className="flex flex-col md:flex-row items-center p-2 mt-3 w-full max-w-7xl gap-10">
-                    <div className="flex justify-center p-3">
-                        <Image src="/solar.png" alt="Solution" width={500} height={500} className="max-w-full h-auto" />
-                    </div>
-                    <p className="p-4 text-start w-full max-w-2xl">
-                        <span className='text-3xl font-semibold'>Why Energy Flow ?</span><br /> <br />
-                        <span className='text-xl'>Long-duration energy storage is crucial for accelerating the adoption of renewables. Flow batteries are emerging as a promising solution for meeting long-duration storage needs. A key advantage of our approach is the use of abundant and affordable electrolytes, making our Sulfur Iron Flow battery an attractive option for long-duration storage. We are currently commercializing this innovative technology.</span>
-                    </p>
+                    <ScrollFadeIn direction='left'>
+                        <div className="flex justify-center p-3">
+                            <Image src="/solar.png" alt="Solution" width={500} height={500} className="max-w-full h-auto" />
+                        </div>
+                    </ScrollFadeIn>
+                    <ScrollFadeIn direction='right'>
+                        <p className="p-4 text-start w-full max-w-2xl">
+                            <span className='text-3xl font-semibold'>Why Energy Flow ?</span><br /> <br />
+                            <span className='text-xl'>Long-duration energy storage is crucial for accelerating the adoption of renewables. Flow batteries are emerging as a promising solution for meeting long-duration storage needs. A key advantage of our approach is the use of abundant and affordable electrolytes, making our Sulfur Iron Flow battery an attractive option for long-duration storage. We are currently commercializing this innovative technology.</span>
+                        </p>
+                    </ScrollFadeIn>
                 </div>
 
                 <div className="w-full max-w-7xl p-4 flex flex-col items-center mt-10">
